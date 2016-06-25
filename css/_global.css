@@ -1,0 +1,209 @@
+/* 
+	TMP Worldwide - Elastic Panels
+	Author:  Michael "Spell" Spellacy, Lead UI Developer <michael.spellacy@tmp.com>, TMP Worldwide LLC
+*/
+	
+@font-face {
+font-family: "TitilliumText22LBold"; src: url("../fonts/TitilliumText22L005-webfont.eot"); src: url("../fonts/TitilliumText22L005-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L005-webfont.woff") format("woff"), url("../fonts/TitilliumText22L005-webfont.ttf") format("truetype"), url("fonts/TitilliumText22L005-webfont.svg#TitilliumText22LBold") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "TitilliumText22LRegular";
+src: url("../fonts/TitilliumText22L003-webfont.eot"); src: url("../fonts/TitilliumText22L003-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L003-webfont.woff") format("woff"), url("../fonts/TitilliumText22L003-webfont.ttf") format("truetype"), url("../fonts/TitilliumText22L003-webfont.svg#TitilliumText22LRegular") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+@media screen, projection {
+
+	body {
+	font: normal 100%/1.5 Arial, Helvetica, Sans-Serif, Myuen;
+	}
+	
+	h1 {
+	font-family: TitilliumText22LBold;
+	font-size: 1.4em;
+	text-shadow: 1px 1px 0 #ccc;
+	}
+	
+	#panels a {
+	color: #fff;
+	text-decoration: none;
+	}
+
+	#panels {
+	position: relative;
+	width: 612px;
+	height: 612px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #000;
+	border: 2px #000 solid;
+	-webkit-box-shadow: 5px 5px 5px #c3c0bc;
+	-moz-box-shadow: 5px 5px 5px #c3c0bc;
+	box-shadow: 5px 5px 5px #c3c0bc;
+	}
+
+	#panels li {
+	position: absolute;
+	cursor: pointer;
+	background-position: left top;
+	background-repeat: no-repeat;
+	border: 2px #000 solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in;
+	opacity: 0.8;
+	}
+
+	#panels li:hover,  #panels li:focus {
+	opacity: 1;
+	}
+
+	#panels .label {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 82%;
+	margin: 0.8em 4%; 
+	padding: 0.8em 4%;
+	font-family: TitilliumText22LRegular;
+	font-size: 0.75em;
+	background: #336;
+	border: 2px #fff solid;
+	text-shadow: 1px 1px 0 #000;
+	color: #fff;
+	opacity: 0.4;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	-webkit-transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in;
+	}
+	
+	#panels .label h2 {
+	margin: 0;
+	padding: 0;
+	}
+	
+	#panels .label p, #panels .label audio {
+	width: 100%;
+	margin: 0.8em 0 0;
+	padding: 0;
+	}
+
+	#panels .label:hover, #panels .label:focus {
+	opacity: 1;
+	}
+
+	.js #panels .label {
+	display: none;
+	}
+
+	/* The Panels */
+
+	#panels li#panel-a {
+	left: 0;
+	top: 0;
+	width: 300px; 
+	height: 302px;
+	background-position: -200px -20px;
+	background-image: url(../img/indy.jpg);
+	}
+
+	#panels li#panel-b {
+	left: 0;
+	bottom: 0;
+	width: 300px; 
+	height: 302px;
+	background-position: -200px -50px;
+	background-image: url(../img/back-to-the-future.jpg);
+	}
+
+	#panels li#panel-c {
+	right: 104px;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	background-position: -75px -175px;
+	background-image: url(../img/star-wars.jpg);
+	}
+
+	#panels li#panel-d {
+	right: 104px;
+	bottom: 204px;
+	width: 200px;
+	height: 200px;
+	background-position: -125px -200px;
+	background-image: url(../img/goonies.jpg);
+	}
+
+	#panels li#panel-e {
+	right: 104px;
+	bottom: 0;
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/superman.jpg);
+	}
+
+	#panels li#panel-f {
+	right: 0;
+	top: 0;
+	width: 100px;
+	height: 404px;
+	background-position: -100px 0;
+	background-image: url(../img/harry-potter.jpg);
+	}
+
+	#panels li#panel-g {
+	right: 0;
+	bottom: 0;
+	width: 100px;
+	height: 200px;
+	background-position: -100px 0;
+	background-image: url(../img/et.jpg);
+	}
+
+}
+
+@media screen and (max-width:480px) {
+
+#panels .label {
+	position: static;
+	}
+
+	#panels {
+	width: auto;
+	height: auto;
+	}
+
+	#panels li#panel-a, #panels li#panel-b, #panels li#panel-c, 
+	#panels li#panel-d, #panels li#panel-e, #panels li#panel-f, 
+	#panels li#panel-g {
+	position: static;
+	width: auto !important;
+	height: 180px !important;
+	background-position: left -90px;
+	}
+
+	#panels li#panel-d{
+	background-position: left -120px;
+	}
+
+	.js #panels .label, #panels .label {
+	display: block;
+	opacity: 0.9;
+	}
+
+}
