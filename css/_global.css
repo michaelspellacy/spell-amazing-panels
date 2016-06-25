@@ -4,16 +4,16 @@
 */
 	
 @font-face {
-font-family: "TitilliumText22LBold"; src: url("../fonts/TitilliumText22L005-webfont.eot"); src: url("../fonts/TitilliumText22L005-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L005-webfont.woff") format("woff"), url("../fonts/TitilliumText22L005-webfont.ttf") format("truetype"), url("fonts/TitilliumText22L005-webfont.svg#TitilliumText22LBold") format("svg");
-font-weight: normal;
+font-family: "TitilliumText22LBold";
 font-style: normal;
+font-weight: normal; src: url("../fonts/TitilliumText22L005-webfont.eot"); src: url("../fonts/TitilliumText22L005-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L005-webfont.woff") format("woff"), url("../fonts/TitilliumText22L005-webfont.ttf") format("truetype"), url("fonts/TitilliumText22L005-webfont.svg#TitilliumText22LBold") format("svg");
 }
 
 @font-face {
 font-family: "TitilliumText22LRegular";
-src: url("../fonts/TitilliumText22L003-webfont.eot"); src: url("../fonts/TitilliumText22L003-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L003-webfont.woff") format("woff"), url("../fonts/TitilliumText22L003-webfont.ttf") format("truetype"), url("../fonts/TitilliumText22L003-webfont.svg#TitilliumText22LRegular") format("svg");
-font-weight: normal;
 font-style: normal;
+font-weight: normal;
+src: url("../fonts/TitilliumText22L003-webfont.eot"); src: url("../fonts/TitilliumText22L003-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumText22L003-webfont.woff") format("woff"), url("../fonts/TitilliumText22L003-webfont.ttf") format("truetype"), url("../fonts/TitilliumText22L003-webfont.svg#TitilliumText22LRegular") format("svg");
 }
 
 @media screen, projection {
@@ -34,33 +34,26 @@ font-style: normal;
 	}
 
 	#panels {
-	position: relative;
-	width: 612px;
-	height: 612px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
 	background: #000;
 	border: 2px #000 solid;
-	-webkit-box-shadow: 5px 5px 5px #c3c0bc;
-	-moz-box-shadow: 5px 5px 5px #c3c0bc;
 	box-shadow: 5px 5px 5px #c3c0bc;
+	height: 612px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 612px;
 	}
 
 	#panels li {
-	position: absolute;
-	cursor: pointer;
 	background-position: left top;
 	background-repeat: no-repeat;
 	border: 2px #000 solid;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
 	border-radius: 10px;
-	-webkit-transition: opacity .2s ease-in;
-	-moz-transition: opacity .2s ease-in;
-	-o-transition: opacity .2s ease-in;
-	transition: opacity .2s ease-in;
+	cursor: pointer;
 	opacity: 0.8;
+	position: absolute;
+	transition: opacity .2s ease-in;
 	}
 
 	#panels li:hover,  #panels li:focus {
@@ -68,28 +61,25 @@ font-style: normal;
 	}
 
 	#panels .label {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 82%;
-	margin: 0.8em 4%; 
-	padding: 0.8em 4%;
-	font-family: TitilliumText22LRegular;
-	font-size: 0.75em;
 	background: #336;
 	border: 2px #fff solid;
-	text-shadow: 1px 1px 0 #000;
-	color: #fff;
-	opacity: 0.4;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	bottom: 0;
+	color: #fff;
+	display: block;
+	font-family: TitilliumText22LRegular;
+	font-size: 0.75em;
+	margin: 0.8em 4%;
+	opacity: 0.4; 
+	padding: 0.8em 4%;
+	position: absolute;
+	right: 0;
 	text-decoration: none;
-	-webkit-transition: opacity .2s ease-in;
-	-moz-transition: opacity .2s ease-in;
-	-o-transition: opacity .2s ease-in;
+	text-shadow: 1px 1px 0 #000;
 	transition: opacity .2s ease-in;
+	width: 82%; 
 	}
 	
 	#panels .label h2 {
@@ -98,9 +88,9 @@ font-style: normal;
 	}
 	
 	#panels .label p, #panels .label audio {
-	width: 100%;
 	margin: 0.8em 0 0;
 	padding: 0;
+	width: 100%;
 	}
 
 	#panels .label:hover, #panels .label:focus {
@@ -114,65 +104,65 @@ font-style: normal;
 	/* The Panels */
 
 	#panels li#panel-a {
+	background-image: url(../img/indy.jpg);
+	background-position: -200px -20px; 
+	height: 302px;
 	left: 0;
 	top: 0;
-	width: 300px; 
-	height: 302px;
-	background-position: -200px -20px;
-	background-image: url(../img/indy.jpg);
+	width: 300px;
 	}
 
 	#panels li#panel-b {
-	left: 0;
-	bottom: 0;
-	width: 300px; 
-	height: 302px;
-	background-position: -200px -50px;
 	background-image: url(../img/back-to-the-future.jpg);
+	background-position: -200px -50px;
+	bottom: 0; 
+	height: 302px;
+	left: 0;
+	width: 300px;
 	}
 
 	#panels li#panel-c {
+	background-image: url(../img/star-wars.jpg);
+	background-position: -75px -175px;
+	height: 200px;
 	right: 104px;
 	top: 0;
 	width: 200px;
-	height: 200px;
-	background-position: -75px -175px;
-	background-image: url(../img/star-wars.jpg);
 	}
 
 	#panels li#panel-d {
-	right: 104px;
-	bottom: 204px;
-	width: 200px;
-	height: 200px;
-	background-position: -125px -200px;
 	background-image: url(../img/goonies.jpg);
+	background-position: -125px -200px;
+	bottom: 204px;
+	height: 200px;
+	right: 104px;
+	width: 200px;
 	}
 
 	#panels li#panel-e {
-	right: 104px;
-	bottom: 0;
-	width: 200px;
-	height: 200px;
 	background-image: url(../img/superman.jpg);
+	bottom: 0;
+	height: 200px;
+	right: 104px;
+	width: 200px;
 	}
 
 	#panels li#panel-f {
+	background-image: url(../img/harry-potter.jpg);
+	background-position: -100px 0;
+	height: 404px;
 	right: 0;
 	top: 0;
 	width: 100px;
-	height: 404px;
-	background-position: -100px 0;
-	background-image: url(../img/harry-potter.jpg);
 	}
 
 	#panels li#panel-g {
-	right: 0;
-	bottom: 0;
-	width: 100px;
-	height: 200px;
-	background-position: -100px 0;
 	background-image: url(../img/et.jpg);
+	background-position: -100px 0;
+	bottom: 0;
+	height: 200px;
+	right: 0;
+	width: 100px;
 	}
 
 }
@@ -184,17 +174,17 @@ font-style: normal;
 	}
 
 	#panels {
-	width: auto;
 	height: auto;
+	width: auto;
 	}
 
 	#panels li#panel-a, #panels li#panel-b, #panels li#panel-c, 
 	#panels li#panel-d, #panels li#panel-e, #panels li#panel-f, 
 	#panels li#panel-g {
+	background-position: left -90px;
+	height: 180px !important;
 	position: static;
 	width: auto !important;
-	height: 180px !important;
-	background-position: left -90px;
 	}
 
 	#panels li#panel-d{
